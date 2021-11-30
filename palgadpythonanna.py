@@ -1,4 +1,4 @@
-from module1 import*
+from module import*
 from keyboard import*
 palgad=loe_failist_listisse("palk.txt")
 inimesed=loe_failist_listisse("inimesed.txt")
@@ -18,3 +18,5 @@ while 1:
     elif read_key()=="C":
         max_palk, kellel=maksimum(palk,inimesed)
         print("maksimaalne palk ==> ", max_palk, " Kellel ==> ",kellel)
+
+    elif read_key()=="D":
