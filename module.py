@@ -15,4 +15,14 @@ def lise(palk, inimene):
     return palk,inimesed
 
 def otsing nimi_jargi(inimesed:list,palk:list):
-    nimi=input("keda otsime")
+    nimi=input("keda otsime?")
+    for inimene in inimesed:
+        if inimene.upper()==nimi.upper():
+            n=inimesed.count(nimi)
+            print("Inimene on olemas, selline nimi kohtume",n, "korda")
+            b=0
+            t=[]
+            for i in range(n):
+                k=inimesed.index(nimi, b)
+                return inimene
+def 
