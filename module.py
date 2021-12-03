@@ -11,8 +11,8 @@ def loe_failist_listisse(file:str)->list:
     return liist
 def lisa(palgad, inimesed):
     """lisab inimene ja tema salary
-    :param:bool: palgad ja nimed
-    :rtype:list:
+    :param:int: palgad ja nimed
+    :rtype:list:inimesed
     """
     a=input("siseta nimi=>  ")
     b=int(input("siseta palk=>  "))
@@ -22,8 +22,8 @@ def lisa(palgad, inimesed):
 
 def otsing_nimi_jargi(inimesed:list,palk:list):
     """otsime inimesed ja nema palkad nimele listis
-    :rtype:str:nimed:
-    :param:index
+    :param:int:list:
+    :rtype:str:nimed
     """
     nimi=input("keda otsime?")
     for inimene in inimesed:
@@ -37,7 +37,7 @@ def otsing_nimi_jargi(inimesed:list,palk:list):
                 return inimene
 def tulumaks():
     """otsime palk with tulumaks
-    :param:var: nimed:
+    :param:int: nimed:
     :rtype:str:palgad
     """
     palgad=[]
@@ -60,8 +60,8 @@ def tulumaks():
                 return ans
 def suurim_(i:list,p:list):
     """Otsime suurim palk
-    :rtype: str, str:
     :param: var kellel
+    :rtype: str, str:
     """
     suurim=max(p)
     print(suurim)
