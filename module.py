@@ -1,5 +1,7 @@
 def loe_failist_listisse(file:str)->list:
     """Loeme tekst failist ja salvesta järjendisse
+    :rtype list loeme:
+    :var stroka:
     """
     file=open(file,"r")
     liist=[]
@@ -9,6 +11,8 @@ def loe_failist_listisse(file:str)->list:
     return liist
 def lise(palgad, inimesed):
     """lisab inimene ja tema salary
+    :rtype:list:
+    :bool: palgad ja nimed
     """
     a=input("siseta nimi=>  ")
     b=int(input("siseta palk=>  "))
@@ -18,6 +22,8 @@ def lise(palgad, inimesed):
 
 def otsing_nimi_jargi(inimesed:list,palk:list):
     """otsime inimesed ja nema palkad nimele listis
+    :rtype:float:nimed:
+    :bool: index
     """
     nimi=input("keda otsime?")
     for inimene in inimesed:
@@ -31,6 +37,8 @@ def otsing_nimi_jargi(inimesed:list,palk:list):
                 return inimene
 def tulumaks():
     """otsime palk with tulumaks
+    :rtype:float:palgad:
+    :var: in nimed:
     """
     palgad=[]
     with open("palgad.txt", "r") as f1:
@@ -49,3 +57,16 @@ def tulumaks():
             h=b-500
             if h==0 or h<0:
                 ans="tulumaks palk on" +str
+                return ans
+def suurim_(i:list,p:list):
+    """Otsime suurim palk
+    :rtype: str, str:
+    :var kellel
+    """
+    suurim=max(p)
+    print(suurim)
+    b=p.index(suurim)
+    kellel=i[b]
+    print(kellel)
+    return suurim, kellel
+

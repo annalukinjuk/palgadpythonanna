@@ -19,4 +19,4 @@ while 1:
         max_palk, kellel=maksimum(palgad,inimesed)
         print("maksimaalne palk ==> ", max_palk, " Kellel ==> ",kellel)
 
-    elif read_key()=="D":
+    elif read_key()=="V":
