@@ -12,11 +12,11 @@ while 1:
         print("keskmine palk on ", kesk_palk)
 
     elif read_key()=="B":
-        min_palk, kellel=minimum(palk,inimesed)
+        min_palk, kellel=minimum(palgad,inimesed)
         print("minimaalne palk ==> ", min_palk, " Kellel ==> ",kellel)
 
     elif read_key()=="C":
-        max_palk, kellel=maksimum(palk,inimesed)
+        max_palk, kellel=maksimum(palgad,inimesed)
         print("maksimaalne palk ==> ", max_palk, " Kellel ==> ",kellel)
 
     elif read_key()=="D":
