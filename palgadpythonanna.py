@@ -8,7 +8,7 @@ while 1:
     print("vajuta nuppu==>")
 
     if read_key()=="A":
-        kesk_palk=round(keskmine(palk), 2)
+        kesk_palk=round(keskmine(palgad,inimesed), 2)
         print("keskmine palk on ", kesk_palk)
 
     elif read_key()=="B":
@@ -20,3 +20,5 @@ while 1:
         print("maksimaalne palk ==> ", max_palk, " Kellel ==> ",kellel)
 
     elif read_key()=="V":
+        lisa(palgad,inimesed)
+        print("siseta info  ", ans, "kellel==>")

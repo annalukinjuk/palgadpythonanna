@@ -9,7 +9,7 @@ def loe_failist_listisse(file:str)->list:
         liist.append(stroka.strip())
     file.close()
     return liist
-def lise(palgad, inimesed):
+def lisa(palgad, inimesed):
     """lisab inimene ja tema salary
     :rtype:list:
     :bool: palgad ja nimed
